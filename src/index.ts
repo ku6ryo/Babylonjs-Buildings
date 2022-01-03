@@ -22,7 +22,7 @@ const engine = new Engine(canvas, true, {preserveDrawingBuffer: true, stencil: t
 const createScene = function(){
   const scene = new Scene(engine)
   const camera = new FreeCamera("camera1", new Vector3(0, 4, 0), scene)
-  camera.setTarget(Vector3.Zero())
+  camera.setTarget(new Vector3(10, 0, 10))
   camera.attachControl(canvas, false)
   scene.clearColor = new Color4(1, 1, 1, 1)
   return scene
